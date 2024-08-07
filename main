@@ -1,0 +1,21 @@
+public class FirstLastDigitSum {
+//This program calculates the sum of the first and last digits of a given number
+    
+    public static int sumFirstAndLastDigit (int number) {
+
+//the remainder will be the last digit        
+        int lastDigit = number % 10; 
+
+        
+        if (number < 0) {
+            return -1;
+        } else {
+//this reduces the number to the first digit
+            while (number >= 10) { 
+                number /= 10;
+            }
+        } return number + lastDigit;
+
+    }
+    
+}
